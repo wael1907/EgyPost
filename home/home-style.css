@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }  
+header {
+    background: #018A30;
+    padding: 20px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .language a {
+    color: white;
+    font-size: 17px;
+    position: relative;
+}
+header .language a:hover,
+header .language .active {
+    color: #FFF32B;
+}
+header .language .ar {
+    left: -7px;
+}
+header .language .ar::after {
+    content: "";
+    background: rgb(241, 241, 241);
+    width: 1px;
+    height: 80%;
+    position: absolute;
+    right: -7px;
+}
+header .language button {
+    font-weight: 800;
+    color: white;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+header .registration {
+    color: white;
+    letter-spacing: .5px;
+    position: relative;
+}
+header .registration::after {
+    content: "\f107";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-left: 5px;
+}
+nav {
+    padding: 21px;
+    background: #005F21;
+    overflow: hidden;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    color: white;
+    font-weight: 300;
+    padding: 30px 20px;
+    margin-right: 25px;
+    letter-spacing: .2px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+nav ul li a:hover, 
+nav ul li .active {
+    color: black;
+    background: #F9D038;
+    font-weight: bold;
+}
+/* *************************************************************************** */
+main {
+    height: 90vh;
+    position: relative;
+    background: url(../images/bg.png) no-repeat;
+    background-size: cover;
+}
+main h1 {
+    padding: 50px 0 20px; 
+    margin: 0;
+    font-size: 70px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 17.75px;
+    width: 950px;
+}
+main .tx {
+    color: #FFFFFF;
+    font-size: 26px;
+    opacity: 0.8;
+    width: 820px;
+    margin-bottom: 20px;
+}
+main button {
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-weight: 600;
+    border: none;
+    width: 300px;
+    height: 77px;
+    font-size: 22px;
+}
+main .details {
+    box-shadow: 0px 3px 30px #0000001A;
+    width: 1112px;
+    height: 400px;
+    position: absolute;
+    bottom: -230px;
+    background: white;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: flex;
+}
+main .details .details-left {
+    width: 50%;
+    height: 100%;
+} 
+main .details .details-left .info-flex-row {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    position: relative;
+}
+main .details .details-left .info-flex-row .pic {
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #DCDCDC;
+    margin: 0 20px 0 30px;
+}
+main .details .details-left .info-flex-row .name {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+}
+main .details .details-left .history {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .details .details-left .history .icon {
+    width: 25%;
+    margin-left: 70px;
+}
+main .details .details-left .history .his-item{
+    width: 70%;
+}
+main .details .details-left .history .his-item p:first-of-type {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+main .details .details-left .history .his-item p:last-of-type {
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+main .details .details-left .history .his-item a {
+    color: #018A30;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    right: 5px;
+}
+main .details .details-left .history .his-item a::after {
+    content: "\f105";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: -16px;
+    top: 7px;
+    font-size: 18px;
+}
+main .details .details-right {
+    width: 50%;
+    height: 100%;
+    background: #018A30;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+main .details .details-right .my-coin {
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 80px 0 20px;
+}
+main .details .details-right .my-coin::before {
+    content: "";
+    background: url(images/walletWhite.svg);
+    position: absolute;
+    left: 75px;
+    top: -13px;
+    width: 66px;
+    height: 72px;
+}
+main .details .details-right .coins {
+    text-align: center;
+    font-size: 95px;
+    font-weight: bold;
+    position: relative;
+    right: 50px;
+    color: white;
+}
+main .details .details-right .coins::after {
+    content: "Coins";
+    font-weight: normal;
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    color: white;
+}
+main .details .details-right p {
+    color: white;
+    font-size: 39px;
+    font-weight: normal;
+    margin-top: 20px;
+    position: relative;
+    left: 78px;
+}
+/* ********************* */
+.about {
+    padding: 300px 0 40px;
+}
+.special-head {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+.special-head-span{
+    color: #8EC641;
+    font-weight: bold;
+}
+.about p {
+    font-size: 25px;
+    width: 1112px;
+    color: #333333;
+}
+/* ********************* */
+.how-work {
+    padding: 40px 0;
+    background: #FAFAFA;
+}
+.how-work video {
+    background: rgb(221, 221, 221);
+    width: 100%;
+    height: 465px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/* ********************* */
+.partners {
+    padding: 40px 0;
+}
+.partners .brands {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 550px;
+    flex-flow: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.partners .brands .brand-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    height: 255px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    box-shadow: 0 5px 8px 0 rgb(214, 214, 214);
+}
+.partners .all-partners {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 293px;
+    height: 75px;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ********************* */
+footer {
+    background: #F2F2F2;
+    padding: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #515151;
+}
+footer span {
+    color: #8EC641;
+}

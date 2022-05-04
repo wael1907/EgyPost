@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }  
+header {
+    background: #018A30;
+    padding: 20px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .language a {
+    color: white;
+    font-size: 17px;
+    position: relative;
+}
+header .language a:hover,
+header .language .active {
+    color: #FFF32B;
+}
+header .language .ar {
+    left: -7px;
+}
+header .language .ar::after {
+    content: "";
+    background: rgb(241, 241, 241);
+    width: 1px;
+    height: 80%;
+    position: absolute;
+    right: -7px;
+}
+header .language button {
+    font-weight: 800;
+    color: white;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+header .registration {
+    color: white;
+    letter-spacing: .5px;
+    position: relative;
+}
+header .registration::after {
+    content: "\f107";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-left: 5px;
+}
+nav {
+    padding: 15px;
+    background: #005F21;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    color: white;
+    font-weight: 300;
+    margin-right: 80px;
+    letter-spacing: .2px;
+}
+/* *************************************************************************** */
+main {
+    padding: 60px 0;
+   
+}
+main h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    color: #005F21;
+    margin: 50px 0 70px 0;
+}
+main .inputs {
+    width: 500px;
+    margin: 0 auto;
+}
+main .inputs .field:first-of-type {
+     margin-bottom: 50px;
+}
+main .inputs .field:last-of-type {
+    margin-bottom: 20px;
+}
+main .inputs .field span {
+    display: block;
+    color: #939598;
+    user-select: none;
+}
+main .inputs .field input {
+    width: 100%;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent #018A30 transparent;
+}
+main .inputs .field input::placeholder,
+main .inputs .field input:focus {
+    color: #018A30;
+    outline: none;
+}
+main .inputs .reset {
+    display: block;
+    margin-bottom: 40px;
+}
+main .inputs .reset a{
+    text-decoration: underline;
+    color: #005F21;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+main .inputs .login {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50px;
+    background: #F9D038;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+main .inputs .login:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+main .inputs .new {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    color: #005F21;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+/* ********************* */
+footer {
+    background: #F2F2F2;
+    padding: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #515151;
+}
+footer span {
+    color: #8EC641;
+}
